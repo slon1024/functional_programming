@@ -17,4 +17,3 @@ fact2 n = product[1..n]
 
 fact3 n = foldr (*) 1 [1..n]
 
-test = [(fact0 1, fact0 2, fact0 10), (fact3 1, fact3 2, fact3 10)]
