@@ -17,4 +17,6 @@ fib2 n | 1 == n = 1
            fib2' :: Integer -> Integer -> Integer -> Integer -> Integer
            fib2' n k f_2 f_1 | k == n   = f_1
                              | k < n    = fib2' n (k+1) f_1 (f_1 + f_2)
-                
+fib3   = 0 : fib3''
+fib3'  = zipWith (+) fib3 fib3''
+fib3'' = 1 : fib3'                
