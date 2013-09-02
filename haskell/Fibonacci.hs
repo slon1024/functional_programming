@@ -16,16 +16,16 @@ fib1 n | n == 0  = 0
 
 
 fib2 n = case n of
-			0 -> 0
-			1 -> 1
-			_ -> fib2(n-1) + fib2(n-2)
+            0 -> 0
+            1 -> 1
+            _ -> fib2(n-1) + fib2(n-2)
 
 fib3 n = 
-	if n == 0 
-		then 0 
-		else if n == 1 
-			then 1 
-			else fib3(n-1) + fib3(n-2)
+    if n == 0 
+        then 0 
+        else if n == 1 
+            then 1 
+            else fib3(n-1) + fib3(n-2)
 
 {-
 - More optimized version
@@ -39,4 +39,4 @@ fib4 n | 1 == n = 1
                
 fib5   = 0 : fib5''
 fib5'  = zipWith (+) fib5 fib5''
-fib5'' = 1 : fib5'
+fib5'' = 1 : fib5' 
