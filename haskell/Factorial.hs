@@ -14,6 +14,7 @@ fact1 n | n == 0 = 1
                        | k > 1  = fact1' (k-1) (v*k)
 
 fact2 n = product[1..n]
-
 fact3 n = foldr (*) 1 [1..n]
 
+{- Infinite sequence -}
+fact4 = scanl1 (*) [1..]
