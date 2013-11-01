@@ -1,3 +1,5 @@
+module Set where
+
 type IntSet = (Integer -> Bool)
 empty   :: IntSet
 empty e = False
